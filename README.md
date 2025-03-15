@@ -35,4 +35,11 @@ Once I had confidence in the data quality, I began **exploratory data analysis (
 
 ---
 
+## 🤔 Digging Deeper: More Complex Questions
+
+After getting a feel for the data through EDA, I wanted to push my analysis further by using CTEs and window functions to answer more nuanced questions. Here are some insights I explored:
+
+1. [Looking at the top 100 users by reputation, what are some of their question and answer statistics?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/009_top_100_users_qa.sql) *(Are they just answering, or do they ask great questions too?)*
+2. [What tags did each of the top 100 users use?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/010_top_100_users_tags.sql) *(Are they specialists in a few tags or active across a variety?)*
+
 This analysis helped me build a stronger understanding of the Stack Overflow community and reputation system. More coming soon!
