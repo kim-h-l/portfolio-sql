@@ -46,4 +46,4 @@ This analysis helped me build a stronger understanding of the Stack Overflow com
 
 ___
 
-This project is licensed under CC-BY-SA 4.0. See the LICENSE file for details.
+This project used the publicly available [Stack Overflow](https://console.cloud.google.com/marketplace/product/stack-exchange/stack-overflow) dataset in BigQuery. This project is licensed under CC-BY-SA 4.0. See the LICENSE file for details.
