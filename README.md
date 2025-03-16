@@ -43,3 +43,7 @@ After getting a feel for the data through EDA, I wanted to push my analysis furt
 2. [What tags did each of the top 100 users use?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/010_top_100_users_tags.sql) *(Are they specialists in a few tags or active across a variety?)*
 
 This analysis helped me build a stronger understanding of the Stack Overflow community and reputation system. More coming soon!
+
+___
+
+This project is licensed under CC-BY-SA 4.0. See the LICENSE file for details.
