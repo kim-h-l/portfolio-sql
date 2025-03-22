@@ -1,48 +1,49 @@
-# SQL Portfolio
+# **SQL Portfolio**  
 
-## Exploring Stack Overflow Data with BigQuery
+## **Exploring Stack Overflow Data with BigQuery**  
 
-Welcome to my SQL portfolio! This section highlights my exploratory analysis of the Stack Overflow dataset using **Google BigQuery**. Since this dataset was new to me, I started with some basic SQL queries to familiarize myself with its structure before diving into more complex analyses.
+Welcome to my SQL portfolio! This section showcases my exploratory analysis of the Stack Overflow dataset using **Google BigQuery**. Since this dataset was new to me, I began with basic SQL queries to understand its structure before diving into more complex analyses.  
 
-All SQL queries referenced can be found [here](https://github.com/kim-h-l/portfolio-sql/tree/main/stackoverflow).
-
----
-
-## 🔍 Understanding the Data
-
-To kick things off, I wanted to explore what the dataset could tell me about Stack Overflow’s top users. I started by looking up the [top user of all time](https://stackoverflow.com/users/22656/jon-skeet) and used their user ID, along with the available schema in BigQuery, to perform a [basic check](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/001_user_data_exploration.sql) on the `users` table. This gave me a better understanding of the table's structure and the kinds of insights I could extract.
+All referenced SQL queries can be found in my [GitHub repository](https://github.com/kim-h-l/portfolio-sql/tree/main/stackoverflow).  
 
 ---
 
-## ✅ Data Quality Checks
+## **🔍 Understanding the Data**  
 
-Before diving deeper, I ran some **data quality checks** to identify potential issues such as null values, duplicates, or unexpected values. Here are the key questions I investigated:
-
-1. [What is the minimum and maximum reputation?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/002_dq_reputation_min_max.sql) *(Understanding the range of values.)*
-2. [Can reputation be null?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/003_dq_reputation_null.sql)
-3. [Which columns in the user table allow null values?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/004_dq_user_table_nulls.sql)
-4. [Are there any duplicate user IDs?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/005_dq_user_id_dupe_check.sql) *(Checking for a primary key.)*
+To get started, I explored what the dataset could reveal about Stack Overflow’s top users. I looked up the [top user of all time](https://stackoverflow.com/users/22656/jon-skeet) and used their user ID, along with the available BigQuery schema, to conduct a [basic check](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/001_user_data_exploration.sql) on the `users` table. This helped me understand the table’s structure and the types of insights I could extract.  
 
 ---
 
-## 📊 Exploratory Data Analysis
+## **✅ Ensuring Data Quality**  
 
-Once I had confidence in the data quality, I began **exploratory data analysis (EDA)** to uncover patterns and trends. Here are some key questions I explored:
+Before performing deeper analysis, I conducted **data quality checks** to identify potential issues such as null values, duplicates, or unexpected data. Key questions I examined:  
 
-1. [Which years had the highest total reputation, based on user account creation year?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/006_eda_reputation_by_year.sql)
-2. [What is the average reputation per user, grouped by account creation year?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/007_eda_avg_user_reputation.sql)
-3. [Who were the top 5 users by reputation in the top 5 years for reputation growth?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/008_eda_top_users_top_years.sql)
+1. [What is the minimum and maximum reputation?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/002_dq_reputation_min_max.sql) *(Assessing value ranges.)*  
+2. [Can reputation be null?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/003_dq_reputation_null.sql)  
+3. [Which columns in the `users` table allow null values?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/004_dq_user_table_nulls.sql)  
+4. [Are there duplicate user IDs?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/005_dq_user_id_dupe_check.sql) *(Verifying primary key integrity.)*  
 
 ---
 
-## 🤔 Digging Deeper: More Complex Questions
+## **📊 Exploratory Data Analysis (EDA)**  
 
-After getting a feel for the data through EDA, I wanted to push my analysis further by using CTEs and window functions to answer more nuanced questions. Here are some insights I explored:
+Once I confirmed data quality, I conducted **exploratory data analysis (EDA)** to uncover patterns and trends. Some key questions I explored:  
 
-1. [Looking at the top 100 users by reputation, what are some of their question and answer statistics?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/009_top_100_users_qa.sql) *(Are they just answering, or do they ask great questions too?)*
-2. [What tags did each of the top 100 users use?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/010_top_100_users_tags.sql) *(Are they specialists in a few tags or active across a variety?)*
+1. [Which years had the highest total reputation, based on user account creation year?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/006_eda_reputation_by_year.sql)  
+2. [What is the average reputation per user, grouped by account creation year?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/007_eda_avg_user_reputation.sql)  
+3. [Who were the top 5 users by reputation in the top 5 years for reputation growth?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/008_eda_top_users_top_years.sql)  
 
-This analysis helped me build a stronger understanding of the Stack Overflow community and reputation system. More coming soon!
+---
+
+## **🤔 Deeper Analysis: Advanced SQL Techniques**  
+
+After initial EDA, I used **CTEs and window functions** to answer more complex questions and gain deeper insights:  
+
+1. [How do the top 100 users by reputation engage with questions and answers?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/009_top_100_users_qa.sql) *(Are they mostly answering, or do they ask high-quality questions too?)*  
+2. [Which tags have the top 100 users used?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/010_top_100_users_tags.sql) *(Are they specialists or active across multiple topics?)*  
+3. [What are the most popular tags among the top 100 users overall?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/011_top_100_users_top_tags.sql)  
+4. [How have the top 10 users’ scores changed over rolling 5-year periods?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/012_top_10_users_rolling_scores.sql)  
+5. [When did the top 10 users see the biggest year-over-year changes in question and answer scores?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/013_top_10_users_yoy_q_a_growth.sql)
 
 ___
 
