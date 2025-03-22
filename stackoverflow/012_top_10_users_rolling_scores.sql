@@ -4,7 +4,7 @@ Question: Looking at the top 10 users only, what were their rolling 5 year score
 Not surprisingly, the top 10 users had the hightest rolling 5 year score mostly concentrated near the beginning of the data timeframe (data timeframe: 2008-2022)
 
 3 of the users had their highest rolling average in 2012, 3 in 2013, 2 in 2014, and one each in 2016 and 2018. 
-Suprisingly, the two users that had their highest rolling averages in 2016 and 2018 were the two users in the top 10 that did not post any questions, they just submitted answers.
+Suprisingly, the user that had their highest rolling average in 2018 was the only user in the top 10 that did not post any questions, they just submitted answers.
 */
 
 
