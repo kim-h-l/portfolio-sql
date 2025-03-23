@@ -2,7 +2,7 @@
 
 ## **Exploring Stack Overflow Data with BigQuery**  
 
-Welcome to my SQL portfolio! This section showcases my exploratory analysis of the Stack Overflow dataset using **Google BigQuery**. Since this dataset was new to me, I began with basic SQL queries to understand its structure before diving into more complex analyses.  
+Welcome to my SQL portfolio! This section showcases my exploratory analysis of the Stack Overflow dataset using **Google BigQuery**. To familiarize myself with this dataset, I initiated basic SQL queries to understand its structure before progressing to more complex analyses.  
 
 All referenced SQL queries can be found in my [GitHub repository](https://github.com/kim-h-l/portfolio-sql/tree/main/stackoverflow).  
 
@@ -39,7 +39,7 @@ Once I confirmed data quality, I conducted **exploratory data analysis (EDA)** t
 
 After initial EDA, I used **CTEs and window functions** to answer more complex questions and gain deeper insights:  
 
-1. [How do the top 100 users by reputation engage with questions and answers?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/009_top_100_users_qa.sql) *(Are they mostly answering, or do they ask high-quality questions too?)*  
+1. [What is the engagement pattern of the top 100 users by reputation?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/009_top_100_users_qa.sql) *(Do they predominantly answer questions, or do they also ask high-quality questions?)*  
 2. [Which tags have the top 100 users used?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/010_top_100_users_tags.sql) *(Are they specialists or active across multiple topics?)*  
 3. [What are the most popular tags among the top 100 users overall?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/011_top_100_users_top_tags.sql)  
 4. [How have the top 10 users’ scores changed over rolling 5-year periods?](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/012_top_10_users_rolling_scores.sql)  
