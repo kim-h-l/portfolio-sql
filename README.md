@@ -2,19 +2,19 @@
 
 ## **Exploring Stack Overflow Data with BigQuery**  
 
-Welcome to my SQL portfolio! This section showcases my exploratory analysis of the Stack Overflow dataset using **Google BigQuery**. To familiarize myself with this dataset, I initiated basic SQL queries to understand its structure before progressing to more complex analyses.  
+Welcome to my SQL portfolio! This section showcases my exploratory analysis of the Stack Overflow dataset using **Google BigQuery**. I began by writing basic SQL queries to explore the dataset’s structure before progressing to more complex analyses. 
 
 All referenced SQL queries can be found in my [GitHub repository](https://github.com/kim-h-l/portfolio-sql/tree/main/stackoverflow).  
 
 ---
 
-## **🔍 Understanding the Data**  
+## **Understanding the Data**  
 
 To get started, I explored what the dataset could reveal about Stack Overflow’s top users. I looked up the [top user of all time](https://stackoverflow.com/users/22656/jon-skeet) and used their user ID, along with the available BigQuery schema, to conduct a [basic check](https://github.com/kim-h-l/portfolio-sql/blob/main/stackoverflow/001_user_data_exploration.sql) on the `users` table. This helped me understand the table’s structure and the types of insights I could extract.  
 
 ---
 
-## **✅ Ensuring Data Quality**  
+## **Ensuring Data Quality**  
 
 Before performing deeper analysis, I conducted **data quality checks** to identify potential issues such as null values, duplicates, or unexpected data. Key questions I examined:  
 
@@ -25,7 +25,7 @@ Before performing deeper analysis, I conducted **data quality checks** to identi
 
 ---
 
-## **📊 Exploratory Data Analysis (EDA)**  
+## **Exploratory Data Analysis (EDA)**  
 
 Once I confirmed data quality, I conducted **exploratory data analysis (EDA)** to uncover patterns and trends. Some key questions I explored:  
 
@@ -35,7 +35,7 @@ Once I confirmed data quality, I conducted **exploratory data analysis (EDA)** t
 
 ---
 
-## **🤔 Deeper Analysis: Advanced SQL Techniques**  
+## **Deeper Analysis: Advanced SQL Techniques**  
 
 After initial EDA, I used **CTEs and window functions** to answer more complex questions and gain deeper insights:  
 
@@ -47,4 +47,4 @@ After initial EDA, I used **CTEs and window functions** to answer more complex q
 
 ___
 
-This project used the publicly available [Stack Overflow](https://console.cloud.google.com/marketplace/product/stack-exchange/stack-overflow) dataset in BigQuery. This project is licensed under CC-BY-SA 4.0. See the LICENSE file for details.
+This project used the publicly available [Stack Overflow](https://console.cloud.google.com/marketplace/product/stack-exchange/stack-overflow) dataset in BigQuery. This project is licensed under CC-BY-SA 4.0. See the [LICENSE](https://github.com/kim-h-l/portfolio-sql/blob/main/LICENSE) file for details.
